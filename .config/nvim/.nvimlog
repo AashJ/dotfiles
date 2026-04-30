@@ -1,0 +1,11 @@
+WRN 2026-03-21T11:34:54.997 ?.55226    server_start:193: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/wEiVD2/nvim.55226.0
+WRN 2026-03-21T11:39:04.333 ?.61067    server_start:193: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/7SGibA/nvim.61067.0
+WRN 2026-03-21T11:39:23.018 ?.61599    server_start:193: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/NMUJFq/nvim.61599.0
+WRN 2026-03-22T10:30:49.963 ?.2599     server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/CoVaeH/nvim.2599.0
+WRN 2026-03-22T10:30:54.011 ?.2639     server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/kTcPOl/nvim.2639.0
+WRN 2026-03-22T16:03:15.470 ?.62229    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/Wu2S1v/nvim.62229.0
+WRN 2026-03-23T12:23:50.392 ?.25410    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/kkap6y/nvim.25410.0
+WRN 2026-04-10T12:16:06.449 ?.60365    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/ecESTU/nvim.60365.0
+WRN 2026-04-15T18:30:43.515 ?.21883    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/loFYnT/nvim.21883.0
+WRN 2026-04-15T18:30:47.692 ?.21918    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/A4RkQc/nvim.21918.0
+WRN 2026-04-15T18:33:08.646 ?.23199    server_start:199: Failed to start server: operation not permitted: /var/folders/3b/blqy2sln56l2j87980r2lkkh0000gn/T/nvim.aash/1umeZm/nvim.23199.0
