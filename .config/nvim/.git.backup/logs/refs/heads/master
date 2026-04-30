@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 0619d89884dec2fa911430fdc42796420421fd6b AashJ <aashj99@gmail.com> 1774117885 -0700	clone: from https://github.com/AashJ/kickstart.nvim.git
-0619d89884dec2fa911430fdc42796420421fd6b 3179c84a51d5e62d3e673a0d56e790c40dfb2f67 AashJ <aashj99@gmail.com> 1774118084 -0700	commit: [fix] commit lazy-lock
-3179c84a51d5e62d3e673a0d56e790c40dfb2f67 9cf5f455bbe64e997c96bf88b128904900b094c5 AashJ <aashj99@gmail.com> 1774118685 -0700	commit: [feat] add lazygit and vim tmux navigation
-9cf5f455bbe64e997c96bf88b128904900b094c5 863c236e8b659e74dd6038980216fd37b9318dd8 AashJ <aashj99@gmail.com> 1774134224 -0700	commit: [feat] add mini files and lazyterminal
-863c236e8b659e74dd6038980216fd37b9318dd8 5622292418b2dd8118ff9346c84130c2cc98b4eb AashJ <aashj99@gmail.com> 1777582205 -0700	commit: [feat] add stuff
