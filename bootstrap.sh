@@ -61,6 +61,11 @@ if [ "$LINKS_ONLY" -eq 0 ]; then
   fi
   # Herdr may already be installed through its own installer.
   export PATH="$TARGET_HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+  # Homebrew 7+ won't load third-party tap packages until each is trusted.
+  if [ "$DRY_RUN" -eq 1 ] || brew help trust >/dev/null 2>&1; then
+    run brew trust --formula oven-sh/bun/bun
+    run brew trust --cask crmne/tap/spotifast
+  fi
   if command -v herdr >/dev/null 2>&1; then
     # Avoid installing a second Herdr binary over a direct installation.
     if [ "$DRY_RUN" -eq 1 ]; then
@@ -73,6 +78,14 @@ if [ "$LINKS_ONLY" -eq 0 ]; then
     fi
   else
     run brew bundle --file="$ROOT/Brewfile" --no-upgrade
+  fi
+  # Nix isn't installable via Homebrew; the installer asks before using sudo.
+  if ! command -v nix >/dev/null 2>&1 && [ ! -x /nix/var/nix/profiles/default/bin/nix ]; then
+    if [ "$DRY_RUN" -eq 1 ]; then
+      echo '[dry-run] curl -sSfL https://install.determinate.systems/nix | sh -s -- install'
+    else
+      curl --proto '=https' --tlsv1.2 -sSfL https://install.determinate.systems/nix | sh -s -- install
+    fi
   fi
   run mkdir -p "$TARGET_HOME/.local/share/atuin"
   if [ "$DRY_RUN" -eq 1 ]; then

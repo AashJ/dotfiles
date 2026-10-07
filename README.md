@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, Arc, Rectangle, Spotifast, Codex CLI, and Claude Code CLI.
+Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, zoxide, direnv, Nix, Bun, Tailscale, Arc, Obsidian, Rectangle, Spotifast, Codex CLI, and Claude Code CLI.
 
 ## Bootstrap
 
@@ -11,9 +11,9 @@ bash ~/Developer/dotfiles/bootstrap.sh --dry-run
 bash ~/Developer/dotfiles/bootstrap.sh
 ```
 
-The script derives paths from its own location, installs packages in `Brewfile` without upgrading existing packages, generates Atuin's Nushell integration, links configs, and installs TPM and both Herdr plugins. Existing configs are moved to timestamped backups; correct links are left alone. A directly installed Herdr binary is kept rather than adding a second Homebrew installation. Herdr Navigator needs Rust to build, which is included in the package list.
+The script derives paths from its own location, trusts the two third-party tap packages (Bun and Spotifast), installs packages in `Brewfile` without upgrading existing packages, installs Nix with the [Determinate Systems installer](https://determinate.systems/nix-installer/) if it is missing, generates Atuin's Nushell integration, links configs, and installs TPM and both Herdr plugins. Existing configs are moved to timestamped backups; correct links are left alone. A directly installed Herdr binary is kept rather than adding a second Homebrew installation. Herdr Navigator needs Rust to build, which is included in the package list.
 
-By default, the script registers Nushell in `/etc/shells`, sets it as your account login shell, and applies macOS KeyRepeat=1 and InitialKeyRepeat=15. Shell setup can prompt for your password. Log out and back in to apply the keyboard settings.
+By default, the script registers Nushell in `/etc/shells`, sets it as your account login shell, and applies macOS KeyRepeat=1 and InitialKeyRepeat=15. Nix and shell setup can prompt for your password. Log out and back in to apply the keyboard settings.
 
 Open a new terminal tab afterwards. Neovim installs its plugins on first launch; Mason installs configured language tools (Node/npm is included for oxfmt). To explicitly restore the Neovim lockfile, use `--sync-nvim`.
 
@@ -25,7 +25,7 @@ Options:
 - `--skip-shell`: leave your account login shell unchanged.
 - `--skip-key-repeat`: leave global keyboard settings unchanged.
 
-Default paths assume macOS's standard configuration locations with no custom XDG settings. No GitHub authentication, SSH keys, or Atuin account credentials are copied. Use `gh auth login --git-protocol ssh --web` separately on new machines.
+Default paths assume macOS's standard configuration locations with no custom XDG settings. No GitHub authentication, SSH keys, Atuin account credentials, or Tailscale logins are copied. Use `gh auth login --git-protocol ssh --web` separately on new machines, and open Tailscale from Applications to sign in.
 
 ## Navigation
 
@@ -56,4 +56,4 @@ Inside Neovim run `:checkhealth`, and test Ctrl+h/j/k/l in a split and at its ou
 
 ## Desktop apps and coding CLIs
 
-`Brewfile` includes Arc, Rectangle, Spotifast (from `crmne/tap`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Spotifast, Codex, and Claude Code separately after installation; grant Rectangle Accessibility permission when prompted.
+`Brewfile` includes Arc, Obsidian, Rectangle, Spotifast (from `crmne/tap`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Spotifast, Codex, and Claude Code separately after installation; grant Rectangle Accessibility permission when prompted.
