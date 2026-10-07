@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, and Atuin.
+Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, Arc, Rectangle, Spotifast, Codex CLI, and Claude Code CLI.
 
 ## Bootstrap
 
@@ -53,3 +53,7 @@ herdr plugin action list --plugin herdr-navigator
 ```
 
 Inside Neovim run `:checkhealth`, and test Ctrl+h/j/k/l in a split and at its outer edge. Run `bash tests/bootstrap.sh` to verify config backup, relinking, and dry-run behavior in a temporary target directory without changing your real configs.
+
+## Desktop apps and coding CLIs
+
+`Brewfile` includes Arc, Rectangle, Spotifast (from `crmne/tap`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Spotifast, Codex, and Claude Code separately after installation; grant Rectangle Accessibility permission when prompted.
