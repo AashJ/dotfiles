@@ -82,6 +82,14 @@ if [ "$LINKS_ONLY" -eq 0 ]; then
     if atuin init nu > "$ATUIN_TMP"; then mv "$ATUIN_TMP" "$TARGET_HOME/.local/share/atuin/init.nu";
     else rm -f "$ATUIN_TMP"; exit 1; fi
   fi
+  run mkdir -p "$TARGET_HOME/.local/share/zoxide"
+  if [ "$DRY_RUN" -eq 1 ]; then
+    printf '[dry-run] zoxide init nushell > %s\n' "$TARGET_HOME/.local/share/zoxide/init.nu"
+  else
+    ZOXIDE_TMP="$(mktemp "$TARGET_HOME/.local/share/zoxide/init.nu.XXXXXX")"
+    if zoxide init nushell > "$ZOXIDE_TMP"; then mv "$ZOXIDE_TMP" "$TARGET_HOME/.local/share/zoxide/init.nu";
+    else rm -f "$ZOXIDE_TMP"; exit 1; fi
+  fi
 fi
 link_config "$ROOT/.config/nvim" "$TARGET_HOME/.config/nvim"
 link_config "$ROOT/.tmux.conf" "$TARGET_HOME/.tmux.conf"
