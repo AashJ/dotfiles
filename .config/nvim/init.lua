@@ -213,7 +213,7 @@ vim.keymap.set('n', '<leader>r', '<cmd>edit<CR>', { desc = '[R]eload current buf
 -- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 -- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
--- Split and tmux pane navigation is provided by `vim-tmux-navigator`.
+-- Split, tmux, and Herdr navigation is configured in custom/plugins/tmux-navigation.lua.
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })

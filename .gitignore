@@ -1,0 +1,6 @@
+# Herdr runtime state and downloaded plugins are machine-specific.
+.config/herdr/*
+!.config/herdr/config.toml
+**/nvim.log
+**/.nvimlog
+.DS_Store

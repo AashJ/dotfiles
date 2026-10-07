@@ -1,0 +1,3 @@
+# Start history search in Vim normal mode; press i to search.
+keymap_mode = "vim-normal"
+enter_accept = true
