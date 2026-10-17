@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, zoxide, direnv, Nix, Bun, Tailscale, Arc, Obsidian, Rectangle, Spotifast, Codex CLI, and Claude Code CLI.
+Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, zoxide, direnv, Nix, Bun, Tailscale, Arc, Google Chrome, Obsidian, Signal, Rectangle, Spotifast, Codex CLI, and Claude Code CLI.
 
 ## Bootstrap
 
@@ -56,4 +56,4 @@ Inside Neovim run `:checkhealth`, and test Ctrl+h/j/k/l in a split and at its ou
 
 ## Desktop apps and coding CLIs
 
-`Brewfile` includes Arc, Obsidian, Rectangle, Spotifast (from `crmne/tap`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Spotifast, Codex, and Claude Code separately after installation; grant Rectangle Accessibility permission when prompted.
+`Brewfile` includes Arc, Google Chrome, Obsidian, Signal, Rectangle, Spotifast (from `crmne/tap`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Google Chrome, Signal, Spotifast, Codex, and Claude Code separately after installation; grant Rectangle Accessibility permission when prompted.
