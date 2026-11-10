@@ -57,3 +57,6 @@ description = "search Herdr"
 [ui]
 mouse_capture = true
 copy_on_select = true
+
+[terminal]
+default_shell = "/opt/homebrew/bin/nu"

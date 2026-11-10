@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, zoxide, direnv, Nix, Bun, Tailscale, Arc, Google Chrome, Obsidian, Signal, Slack, 1Password, Rectangle, Spotifast, AWS CLI, Codex CLI, and Claude Code CLI.
+Personal macOS setup: Ghostty, Nushell, Neovim, tmux, Herdr, Atuin, zoxide, direnv, Nix, Bun, Tailscale, Arc, Google Chrome, Obsidian, Signal, Slack, Linear, 1Password, Rectangle, OpenLogi, Spotifast, Claude, ChatGPT, AWS CLI, Codex CLI, and Claude Code CLI.
 
 ## Bootstrap
 
@@ -56,4 +56,4 @@ Inside Neovim run `:checkhealth`, and test Ctrl+h/j/k/l in a split and at its ou
 
 ## Desktop apps and coding CLIs
 
-`Brewfile` includes Arc, Google Chrome, Obsidian, Signal, Slack, 1Password, Rectangle, Spotifast (from `crmne/tap`), AWS CLI (`awscli`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Google Chrome, Signal, Slack, 1Password, Spotifast, Codex, and Claude Code separately after installation; run `aws configure` (or `aws configure sso`) to set up AWS credentials; grant Rectangle Accessibility permission when prompted.
+`Brewfile` includes Arc, Google Chrome, Obsidian, Signal, Slack, Linear, 1Password, Rectangle, OpenLogi, Spotifast (from `crmne/tap`), Claude, ChatGPT, AWS CLI (`awscli`), Codex CLI (`codex`), and Claude Code CLI (`claude-code`, the stable channel). The bootstrap installs missing packages and does not upgrade existing ones. Sign into Arc, Google Chrome, Signal, Slack, Linear, 1Password, Spotifast, Claude, ChatGPT, Codex, and Claude Code separately after installation; run `aws configure` (or `aws configure sso`) to set up AWS credentials; grant Rectangle Accessibility permission and OpenLogi any permissions it requests when prompted.
